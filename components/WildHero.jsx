@@ -28,9 +28,20 @@ const HERO_SLIDES = [
     objectPosition: 'center 40%',
   },
   {
+    id: 'alluring-boutique',
+    image: '/images/hero/hero-alluring-jewellery.jpeg',
+    titleLine1: 'Haute Retail Salons,',
+    titleLine2: 'Curated Exhibition Craft.',
+    tagline: 'Alluring Jewellery Flagship: illuminated gold vitrines, velvet consultation lounges, and precision joinery.',
+    ctaText: 'Explore Retail Works',
+    ctaHref: '/works',
+    alt: 'Alluring Jewellery Flagship boutique designed and crafted by Design Ark',
+    objectPosition: 'center center',
+  },
+  {
     id: 'kirsche-boutique',
     image: '/images/hero/hero-kirsche-boutique.jpeg',
-    titleLine1: 'Haute Retail Flagships,',
+    titleLine1: 'Commercial Facades,',
     titleLine2: 'Atmospheric Architecture.',
     tagline: 'Kirsche commercial retail flagship: illuminated 3D golden facade and bespoke exhibition vitrines.',
     ctaText: 'View Works Archive',
@@ -232,6 +243,24 @@ export default function WildHero() {
           will-change: transform, opacity;
         }
 
+        .hero-headline-title {
+          text-shadow:
+            0 1px 3px rgba(0, 0, 0, 0.98),
+            0 2px 8px rgba(0, 0, 0, 0.92),
+            0 4px 18px rgba(0, 0, 0, 0.88),
+            0 8px 36px rgba(0, 0, 0, 0.82),
+            0 16px 70px rgba(0, 0, 0, 0.75);
+        }
+
+        .hero-headline-italic {
+          text-shadow:
+            0 1px 3px rgba(0, 0, 0, 0.98),
+            0 2px 8px rgba(0, 0, 0, 0.92),
+            0 4px 18px rgba(0, 0, 0, 0.88),
+            0 8px 36px rgba(0, 0, 0, 0.82),
+            0 16px 70px rgba(0, 0, 0, 0.75);
+        }
+
         @media (max-height: 680px) {
           .anim-hero-narrative {
             font-size: 11px !important;
@@ -287,40 +316,50 @@ export default function WildHero() {
           pointerEvents: heroContentOpacity <= 0.05 ? 'none' : 'auto',
         }}
       >
+        {/* Localized Ambient Contrast Halo (Behind text only - preserves 100% full brightness & opacity of photography) */}
+        <div
+          aria-hidden="true"
+          className="absolute -inset-x-8 sm:-inset-x-20 -inset-y-12 sm:-inset-y-16 rounded-[3.5rem] bg-[radial-gradient(ellipse_80%_70%_at_50%_48%,_rgba(10,9,8,0.78)_0%,_rgba(10,9,8,0.45)_52%,_rgba(10,9,8,0.12)_78%,_transparent_100%)] pointer-events-none -z-10"
+        />
+
         <div
           key={`headline-${currentSlide}`}
-          className="space-y-0.5 sm:space-y-1"
+          className="space-y-0.5 sm:space-y-1 relative z-10"
         >
           <div>
-            <h1 className="anim-hero-line-1 hero-headline-title heading-2--serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#FAF9F4] font-normal leading-[1.02] tracking-tight max-w-5xl drop-shadow-[0_4px_35px_rgba(0,0,0,0.95)]">
+            <h1 className="anim-hero-line-1 hero-headline-title heading-2--serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#FAF9F4] font-normal leading-[1.02] tracking-tight max-w-5xl">
               {activeSlide.titleLine1}
             </h1>
           </div>
           <div>
-            <span className="anim-hero-line-2 hero-headline-italic block font-serif italic font-normal text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#DFC294] leading-[1.02] tracking-tight drop-shadow-[0_4px_35px_rgba(0,0,0,0.95)]">
+            <span className="anim-hero-line-2 hero-headline-italic block font-serif italic font-normal text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#DFC294] leading-[1.02] tracking-tight">
               {activeSlide.titleLine2}
             </span>
           </div>
         </div>
 
-        {/* Supporting Narrative Paragraph (Concise & Poetic) */}
+        {/* Supporting Narrative Capsule: High-legibility luxury architectural pill */}
         {activeSlide.tagline && (
-          <p
+          <div
             key={`tagline-${currentSlide}`}
-            className="anim-hero-narrative font-light text-xs sm:text-sm md:text-[15px] text-[#FAF9F4]/85 max-w-xl mx-auto leading-relaxed drop-shadow-[0_2px_18px_rgba(0,0,0,0.95)] mt-3 sm:mt-4 px-4"
+            className="anim-hero-narrative mt-4 sm:mt-5 max-w-2xl mx-auto px-4 relative z-10"
           >
-            {activeSlide.tagline}
-          </p>
+            <div className="inline-flex items-center justify-center px-5 sm:px-7 py-2 sm:py-2.5 rounded-full bg-[#141210]/75 backdrop-blur-md border border-[#DFC294]/30 shadow-[0_8px_32px_rgba(0,0,0,0.8)] text-center">
+              <p className="font-technical-label text-[11px] sm:text-xs md:text-[13px] text-[#FAF9F4] font-normal tracking-wide leading-relaxed">
+                {activeSlide.tagline}
+              </p>
+            </div>
+          </div>
         )}
 
         {/* Hero Dynamic CTA Buttons - calibrated compact line-spacing & height responsiveness */}
         <div
           key={`cta-${currentSlide}`}
-          className="anim-hero-buttons hero-button-row mt-4 sm:mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4"
+          className="anim-hero-buttons hero-button-row mt-5 sm:mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4 relative z-10"
         >
           <Link
             href={activeSlide.ctaHref || '/works'}
-            className="group inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3 rounded-full bg-[#DFC294] text-[#141210] font-technical-label text-[10px] sm:text-xs tracking-widest uppercase font-semibold transition-all duration-300 hover:bg-white hover:shadow-[0_0_30px_rgba(223,194,148,0.5)] active:scale-95"
+            className="group inline-flex items-center justify-center px-6 py-2.5 sm:px-7 sm:py-3 rounded-full bg-[#DFC294] text-[#141210] font-technical-label text-[10px] sm:text-xs tracking-widest uppercase font-semibold transition-all duration-300 hover:bg-white hover:shadow-[0_0_30px_rgba(223,194,148,0.5)] shadow-[0_4px_24px_rgba(0,0,0,0.6)] active:scale-95"
           >
             <span>{activeSlide.ctaText || 'Explore Commissions'}</span>
             <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
@@ -328,7 +367,7 @@ export default function WildHero() {
 
           <Link
             href="/contact_us"
-            className="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-full border border-white/30 bg-black/20 backdrop-blur-sm text-white font-technical-label text-[10px] sm:text-xs tracking-widest uppercase font-medium transition-all duration-300 hover:border-white hover:bg-white/10 active:scale-95"
+            className="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-full border border-white/40 bg-[#141210]/80 backdrop-blur-md text-white font-technical-label text-[10px] sm:text-xs tracking-widest uppercase font-semibold transition-all duration-300 hover:border-[#DFC294] hover:text-[#DFC294] hover:bg-black shadow-[0_4px_24px_rgba(0,0,0,0.6)] active:scale-95"
           >
             Request Consultation
           </Link>

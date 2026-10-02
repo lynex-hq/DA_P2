@@ -298,3 +298,25 @@ body.popup-visible {
     scroll-behavior: auto !important;
   }
 }
+
+/* ===========================================================================
+   High-Contrast Luxury Hero Typography
+   Ensures 100% legibility on bright backgrounds without reducing image opacity
+   =========================================================================== */
+.hero-headline-title {
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.98),
+    0 2px 8px rgba(0, 0, 0, 0.92),
+    0 4px 18px rgba(0, 0, 0, 0.88),
+    0 8px 36px rgba(0, 0, 0, 0.82),
+    0 16px 70px rgba(0, 0, 0, 0.75) !important;
+}
+
+.hero-headline-italic {
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.98),
+    0 2px 8px rgba(0, 0, 0, 0.92),
+    0 4px 18px rgba(0, 0, 0, 0.88),
+    0 8px 36px rgba(0, 0, 0, 0.82),
+    0 16px 70px rgba(0, 0, 0, 0.75) !important;
+}
