@@ -147,11 +147,25 @@ export default function WildHero() {
         })}
 
         {/* Unified Balanced Cinematic Scrim & Atmospheric Vignette */}
-        <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/50 via-black/20 to-[#141210]/85 pointer-events-none" />
-        <div className="absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.15)_0%,_rgba(0,0,0,0.05)_50%,_rgba(0,0,0,0.45)_100%)] pointer-events-none" />
+        <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/60 via-black/25 to-[#141210]/90 pointer-events-none" />
+        <div className="absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.2)_0%,_rgba(0,0,0,0.08)_45%,_rgba(0,0,0,0.5)_100%)] pointer-events-none" />
       </div>
 
       <style jsx>{`
+        .hero-headline-title {
+          text-shadow:
+            0 1px 2px rgba(0, 0, 0, 0.95),
+            0 3px 12px rgba(0, 0, 0, 0.85),
+            0 8px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-headline-italic {
+          text-shadow:
+            0 1px 2px rgba(0, 0, 0, 0.95),
+            0 3px 12px rgba(0, 0, 0, 0.85),
+            0 8px 30px rgba(0, 0, 0, 0.7);
+        }
+
         @keyframes heroTitleBloom {
           0% {
             opacity: 0;
