@@ -1,8 +1,11 @@
 import { Bodoni_Moda, Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import LoadingScreen from '@/components/LoadingScreen';
+import GlassPageLoader from '@/components/GlassPageLoader';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import SmoothScroll from '@/components/SmoothScroll';
+import PageTransition from '@/components/PageTransition';
 
 const bodoni = Bodoni_Moda({
   subsets: ['latin'],
@@ -25,26 +28,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'DESIGN ARK // Atelier & Architectural Rigor',
+  title: 'DESIGN ARK',
   description:
-    'Formulating mathematical atmospheres through volcanic basalt foundations, tactile travertine textures, and precision metallic joinery.',
+    'Design Ark is an architectural and interior design studio formulating quiet luxury residences, commercial flagships, and executive workplaces.',
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: 'cover',
+  themeColor: '#141210',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${bodoni.variable} ${geist.variable} ${geistMono.variable}`}>
-      <head>
-        {/* Icon font — used for the drawer glyph and the service-card icons */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="bg-ivory text-slate antialiased">
-        <SiteHeader />
-        {children}
-        <SiteFooter />
-        <WhatsAppButton />
+      <body
+        suppressHydrationWarning
+        className="bg-[#141210] text-[#FAF9F4] antialiased selection:bg-[#C5A880] selection:text-[#141414]"
+      >
+        <SmoothScroll>
+          <LoadingScreen />
+          <GlassPageLoader />
+          <SiteHeader />
+          <PageTransition>{children}</PageTransition>
+          <SiteFooter />
+        </SmoothScroll>
       </body>
     </html>
   );
