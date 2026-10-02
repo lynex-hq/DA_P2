@@ -311,7 +311,7 @@ export default function AboutPage() {
                   src={leader.image}
                   alt={leader.name}
                   fill
-                  sizes="240px"
+                  sizes="(min-width: 640px) 480px, 360px"
                   className="object-cover"
                 />
               </div>

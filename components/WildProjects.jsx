@@ -160,7 +160,7 @@ export default function WildProjects({ onSelectProject }) {
                   src={project.image}
                   alt={project.title}
                   fill
-                  sizes="(max-width: 768px) 300px, (max-width: 1200px) 440px, 480px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300" />

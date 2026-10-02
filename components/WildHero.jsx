@@ -138,7 +138,7 @@ export default function WildHero() {
                 priority={idx === 0}
                 sizes="100vw"
                 style={{ objectPosition: slide.objectPosition || 'center center' }}
-                className={`object-cover brightness-[0.88] contrast-[1.03] saturate-[1.05] transition-transform duration-[7000ms] ease-out ${
+                className={`object-cover brightness-[0.95] contrast-[1.05] transition-transform duration-[7000ms] ease-out ${
                   isActive ? 'scale-105 opacity-100 animate-ken-burns' : 'scale-100 opacity-0'
                 }`}
               />
@@ -147,8 +147,8 @@ export default function WildHero() {
         })}
 
         {/* Unified Balanced Cinematic Scrim & Atmospheric Vignette */}
-        <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/65 via-black/30 to-[#141210]/90 pointer-events-none" />
-        <div className="absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.25)_0%,_rgba(0,0,0,0.1)_45%,_rgba(0,0,0,0.55)_100%)] pointer-events-none" />
+        <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/50 via-black/20 to-[#141210]/85 pointer-events-none" />
+        <div className="absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.15)_0%,_rgba(0,0,0,0.05)_50%,_rgba(0,0,0,0.45)_100%)] pointer-events-none" />
       </div>
 
       <style jsx>{`

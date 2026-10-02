@@ -127,7 +127,7 @@ export default function WildTeam() {
                   src={member.image}
                   alt={member.name}
                   fill
-                  sizes="(min-width: 768px) 360px, 280px"
+                  sizes="(min-width: 768px) 720px, 100vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>

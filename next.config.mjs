@@ -6,7 +6,7 @@ const nextConfig = {
   // needed, the contact form has to be redesigned first (e.g. posted to an
   // external form service) rather than flipping this flag.
   images: {
-    formats: ['image/avif', 'image/webp'],
+    unoptimized: true,
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
