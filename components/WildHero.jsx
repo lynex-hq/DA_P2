@@ -298,17 +298,23 @@ export default function WildHero() {
 
       {/* 2. Center Stage Hero Content: Smooth Scroll-Linked Graceful Fade & Lift */}
       <div
-        className="relative z-30 my-auto py-2 sm:py-4 px-4 sm:px-8 md:px-12 max-w-5xl mx-auto text-center flex flex-col items-center justify-center w-full transition-opacity duration-150 ease-out will-change-transform"
+        className="relative z-30 my-auto py-4 sm:py-7 md:py-8 px-5 sm:px-10 md:px-14 max-w-4xl lg:max-w-5xl mx-auto text-center flex flex-col items-center justify-center w-[92%] sm:w-auto transition-opacity duration-150 ease-out will-change-transform"
         style={{
           opacity: heroContentOpacity,
           transform: heroContentTransform,
           pointerEvents: heroContentOpacity <= 0.05 ? 'none' : 'auto',
         }}
       >
-        {/* Localized Ambient Contrast Halo (Behind text only - preserves 100% full brightness & opacity of photography) */}
+        {/* Architectural Dark Backdrop Panel: Premium Frosted Glass Shield */}
         <div
           aria-hidden="true"
-          className="absolute -inset-x-8 sm:-inset-x-20 -inset-y-12 sm:-inset-y-16 rounded-[3.5rem] bg-[radial-gradient(ellipse_80%_70%_at_50%_48%,_rgba(10,9,8,0.78)_0%,_rgba(10,9,8,0.45)_52%,_rgba(10,9,8,0.12)_78%,_transparent_100%)] pointer-events-none -z-10"
+          className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-[#141210]/70 backdrop-blur-md border border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.85)] pointer-events-none -z-10"
+        />
+
+        {/* Ambient Feathered Glow around the backdrop */}
+        <div
+          aria-hidden="true"
+          className="absolute -inset-4 sm:-inset-8 rounded-[3rem] bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.6)_0%,_transparent_80%)] pointer-events-none -z-20"
         />
 
         <div
