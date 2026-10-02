@@ -177,15 +177,15 @@ export default function WildContact() {
                       Direct Telephone
                     </span>
                     <a
-                      href="tel:+94112345678"
+                      href="tel:+94770288327"
                       className="text-sm font-semibold text-[#181614] hover:text-[#A48A7A] transition-colors"
                     >
-                      +94 11 234 5678
+                      +94 77 028 8327
                     </a>
                   </div>
                   <button
                     type="button"
-                    onClick={() => handleCopy('+94112345678', 'Phone copied!')}
+                    onClick={() => handleCopy('+94 77 028 8327', 'Phone copied!')}
                     className="text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-full border border-[#E5DFD7] hover:border-[#181614] hover:bg-[#181614] hover:text-white transition-colors cursor-pointer shrink-0"
                   >
                     {copiedText === 'Phone copied!' ? '✓ Copied' : 'Copy'}
@@ -199,15 +199,15 @@ export default function WildContact() {
                       Written Inquiries
                     </span>
                     <a
-                      href="mailto:inquiry@designark.com"
+                      href="mailto:kevin.designark@gmail.com"
                       className="text-sm font-semibold text-[#181614] hover:text-[#A48A7A] transition-colors"
                     >
-                      inquiry@designark.com
+                      kevin.designark@gmail.com
                     </a>
                   </div>
                   <button
                     type="button"
-                    onClick={() => handleCopy('inquiry@designark.com', 'Email copied!')}
+                    onClick={() => handleCopy('kevin.designark@gmail.com', 'Email copied!')}
                     className="text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-full border border-[#E5DFD7] hover:border-[#181614] hover:bg-[#181614] hover:text-white transition-colors cursor-pointer shrink-0"
                   >
                     {copiedText === 'Email copied!' ? '✓ Copied' : 'Copy'}
@@ -221,11 +221,11 @@ export default function WildContact() {
                       Direct WhatsApp Desk
                     </span>
                     <span className="text-sm font-semibold text-[#181614]">
-                      +94 77 000 0000
+                      +94 77 028 8327
                     </span>
                   </div>
                   <a
-                    href="https://wa.me/94770000000?text=Hello%20Design%20Ark%20Team%2C%20I%20would%20like%20to%20inquire%20about%20a%20project."
+                    href="https://wa.me/94770288327?text=Hello%20Design%20Ark%20Team%2C%20I%20would%20like%20to%20inquire%20about%20a%20project."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[10px] uppercase tracking-widest px-3.5 py-1.5 rounded-full bg-[#2E7D32] text-white hover:bg-[#1B5E20] transition-colors font-bold shrink-0 inline-flex items-center gap-1"

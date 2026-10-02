@@ -81,7 +81,7 @@ export default function SiteFooter() {
 
             {/* WhatsApp Icon */}
             <a
-              href="https://wa.me/94112345678"
+              href="https://wa.me/94770288327"
               target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 rounded-full border border-[#E5DFD7] hover:border-[#181614] hover:bg-[#181614] text-[#181614] hover:text-white flex items-center justify-center transition-all duration-300 group cursor-pointer"

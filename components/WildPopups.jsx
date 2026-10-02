@@ -4,6 +4,86 @@ import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 const POPUPS_DATA = {
+  consultation: {
+    num: '1',
+    title: 'Design Consultation & Door-to-Door Visits.',
+    paragraphs: [
+      'We provide personal door-to-door on-site property consultations. Our design team visits your commercial or residential property in person to evaluate spatial flow, advise on how to uplift appearance, and guide you through the best possibilities of space planning, ergonomic layouts, and custom color palettes.',
+      'Through one-to-one consultation, we listen deeply to your specific functional requirements and lifestyle aspirations, translating your initial vision into a clear, cohesive architectural roadmap.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
+  management: {
+    num: '2',
+    title: 'Project Management & Turnkey Stewardship.',
+    paragraphs: [
+      'Handling the total project for you from the initial point of requirement up to handing over the keys. In three simple steps: Budgeting, Designing, and Implementing.',
+      'We act as your dedicated project consultant, overseeing civil construction, electrical (MEP), air conditioning (HVAC), architectural finishes, and bespoke furniture with 100% cost transparency and schedule reliability.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
+  furniture: {
+    num: '3',
+    title: 'Tailor-Made Furnitures & In-House Manufacturing.',
+    paragraphs: [
+      'We are specialized in custom furniture manufacturing according to your exact specifications, ergonomic requirements, and chosen materials.',
+      'Our in-house manufacturing facility allows us to control costs from all edges and corners with zero middleman markup. We also specialize in modifying and adding value to existing furniture, maximizing the usability and beauty of your indoor and outdoor pieces.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
+  civil: {
+    num: '4',
+    title: 'Civil & Renovation Projects.',
+    paragraphs: [
+      'Comprehensive civil construction, structural alterations, adaptive reuse, and architectural renovations across luxury residences and commercial estates.',
+      'We manage structural support, quantity surveying, MEP integration, waterproofing, and high-performance architectural finishes executed with master-craftsman precision.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
+  fitout: {
+    num: '5',
+    title: 'Total Interior Fit-Out & Turnkey Handover.',
+    paragraphs: [
+      'Complete turnkey interior fit-outs for prestigious corporate headquarters, luxury penthouses, flagship retail spaces, and private residences.',
+      'From civil masonry and acoustic wall paneling to lighting integration and turnkey handover, every millimeter is delivered ready for immediate occupancy.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
+  spacemanagement: {
+    num: '6',
+    title: 'Space Management & Functional Planning.',
+    paragraphs: [
+      'Calibrated space planning that adds tangible value to each foot of your space, elevating both aesthetic appeal and human workflow.',
+      'Whether creating a warm, loving home environment or a culture-driven collaborative corporate workspace, our spatial solutions foster productivity, wellness, and serenity.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
+  interiordesign: {
+    num: '7',
+    title: 'Interior Designing (Commercial & Residential).',
+    paragraphs: [
+      'Under the leadership of Mr. Kevin, our studio brings nearly a decade of experience, converting thousands of square feet into distinguished destinations.',
+      'Our interior designers understand your exact requirements to "draw the picture in your heart," curating harmonious textures, natural stones, bespoke joinery, and custom lighting.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
+  visualization: {
+    num: '8',
+    title: '3D Architectural Visualization & Rendering.',
+    paragraphs: [
+      'Photorealistic 3D rendering, volumetric modeling, and material simulation that allow you to explore every detail of your future space before construction begins.',
+      'From lighting angles and shadow studies to exact texture mapping and custom furniture placement, our visualizations ensure total alignment between design and execution.',
+    ],
+    cta: 'Our Services',
+    href: '/services',
+  },
   projektentwicklung: {
     num: '1',
     title: 'Project Development & Architecture.',

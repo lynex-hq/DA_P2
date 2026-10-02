@@ -5,11 +5,14 @@ import Link from 'next/link';
 import { images } from '@/lib/images';
 
 const SERVICES_LIST = [
-  { id: 'projektentwicklung', num: '1', title: 'Project Development & Architecture' },
-  { id: 'finanzierung', num: '2', title: 'Financial Structuring & Advisory' },
-  { id: 'planung', num: '3', title: 'Planning & Turnkey Execution' },
-  { id: 'renovation', num: '4', title: 'Historic Renovation & Adaptive Reuse' },
-  { id: 'produktion', num: '5', title: 'Craft & Bespoke Millwork' },
+  { id: 'consultation', num: '1', title: 'Design Consultation & Door-to-Door Visits' },
+  { id: 'management', num: '2', title: 'Project Management & Turnkey Stewardship' },
+  { id: 'furniture', num: '3', title: 'Tailor-Made Furnitures & In-House Millwork' },
+  { id: 'civil', num: '4', title: 'Civil & Renovation Projects' },
+  { id: 'fitout', num: '5', title: 'Total Interior Fit-Out (Keys Handover)' },
+  { id: 'spacemanagement', num: '6', title: 'Space Management & Functional Planning' },
+  { id: 'interiordesign', num: '7', title: 'Commercial & Residential Interior Designing' },
+  { id: 'visualization', num: '8', title: '3D Architectural Visualization & Rendering' },
 ];
 
 export default function WildServices({ onOpenPopup }) {
@@ -28,42 +31,67 @@ export default function WildServices({ onOpenPopup }) {
         {/* Main Grid: Left Picture / Right Narrative + Numbered Pills */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          {/* Left Column: Curated Architectural Visual */}
-          <div className="lg:col-span-5 relative h-[320px] sm:h-[420px] md:h-[540px] rounded-2xl overflow-hidden shadow-lg group bg-[#ECE8DF] lg:sticky lg:top-28">
-            <Image
-              src={images.spacejoy}
-              alt="Design Ark architectural disciplines and bespoke spaces"
-              fill
-              sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-            />
-          </div>
-
-          {/* Right Column: Heading, Narrative, and 5 Interactive Pill Buttons in English */}
-          <div className="lg:col-span-7 space-y-10">
-            <div className="space-y-6">
-              <h2 className="heading-2--serif text-4xl sm:text-6xl md:text-7xl font-normal gradient-color">
-                Disciplines.
-              </h2>
-
-              <div className="space-y-4 text-sm sm:text-base md:text-lg text-[#181614]/80 font-light leading-relaxed">
-                <p>
-                  Design Ark develops and realizes holistic architectural and interior environments with uncompromising focus on spatial function, material longevity, financial rigor, and schedule reliability.
-                </p>
-                <p>
-                  Our portfolio spans the sensitive renovation and adaptive reuse of existing estates, bespoke private residences, through to distinguished commercial flagships and executive workplaces.
-                </p>
-                <p>
-                  As an experienced, deeply networked architectural partner, we steer every commission from strategic spatial planning through to turnkey handover.
-                </p>
-                <p>
-                  Furthermore, we advise property owners with longstanding expertise in sustainable construction, energy modernizations, and value-enhancing transformations.
+          {/* Left Column: Curated Architectural Visual & Value Highlights */}
+          <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-28">
+            <div className="relative h-[320px] sm:h-[420px] md:h-[480px] rounded-2xl overflow-hidden shadow-lg group bg-[#ECE8DF]">
+              <Image
+                src={images.spacejoy}
+                alt="Design Ark architectural disciplines and bespoke spaces"
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md border border-white/40 shadow-sm space-y-1">
+                <span className="font-technical-label text-[10px] tracking-widest uppercase text-[#DFC294] font-bold block">
+                  Turnkey Guarantee
+                </span>
+                <p className="text-xs text-[#181614] font-medium leading-snug">
+                  From initial requirement up to handing over the keys: Budgeting, Designing, Implementing.
                 </p>
               </div>
             </div>
 
-            {/* 5 Interactive Numbered Pill Buttons */}
-            <div className="flex flex-col gap-3 pt-4">
+            {/* In-House Manufacturing Facility Badge */}
+            <div className="p-5 rounded-2xl bg-white border border-[#E5DFD7] space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#2E7D32]" />
+                <h4 className="font-technical-label text-[11px] tracking-wider uppercase text-[#181614] font-bold">
+                  In-House Manufacturing Facility
+                </h4>
+              </div>
+              <p className="text-xs text-[#181614]/75 font-light leading-relaxed">
+                Direct cost control from all edges and corners with zero middleman markup. We custom-fabricate furniture, cabinetry, and also modify existing furniture to maximize longevity and value.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Column: Heading, Narrative, and 8 Interactive Pill Buttons */}
+          <div className="lg:col-span-7 space-y-10">
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <span className="font-technical-label text-xs tracking-[0.25em] text-[#A48A7A] uppercase block">
+                  What We Do &bull; Scope of Practice
+                </span>
+                <h2 className="heading-2--serif text-4xl sm:text-6xl md:text-7xl font-normal gradient-color">
+                  Disciplines.
+                </h2>
+              </div>
+
+              <div className="space-y-4 text-sm sm:text-base md:text-lg text-[#181614]/80 font-light leading-relaxed">
+                <p>
+                  Design Ark is capable of handling the total project for you, from the initial point of requirement up to handing over the keys. In three simple steps: <strong>Budgeting, Designing, and Implementing</strong>.
+                </p>
+                <p>
+                  We take complete care of Civil Construction, Electrical &amp; MEP, Air Conditioning, Architectural Finishes, Bespoke Furniture Manufacturing, Lighting, and specialized client needs with 100% transparency.
+                </p>
+                <p>
+                  Whether transforming private apartments and residences into warm, loving homes, or delivering culture-driven corporate headquarters, our one-on-one consultations guide you through every creative possibility.
+                </p>
+              </div>
+            </div>
+
+            {/* 8 Interactive Numbered Pill Buttons */}
+            <div className="flex flex-col gap-3 pt-2">
               {SERVICES_LIST.map((srv) => (
                 <button
                   key={srv.id}

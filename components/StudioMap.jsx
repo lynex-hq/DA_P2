@@ -11,7 +11,7 @@ const STUDIO = {
   coords: [6.8872552, 79.8858173],
   zoom: 16,
   hours: 'Mon – Fri: 9:00 AM – 5:00 PM',
-  phone: '+94 11 234 5678',
+  phone: '+94 77 028 8327',
   plusCode: 'VVPP+W8 Colombo',
   googleMapsUrl: 'https://www.google.com/maps/place/Design+ark+(Pvt)+Ltd./@6.8872552,79.8858173,17z',
   directionsUrl: 'https://www.google.com/maps/dir//Design+ark+(Pvt)+Ltd.,+33,+1+Narahenpita+-+Nawala+Rd,+Colombo+00500/@6.8872552,79.8858173,17z',

@@ -8,27 +8,27 @@ import ScrollCurvedCorners from '@/components/ScrollCurvedCorners';
 const PRINCIPLES = [
   {
     number: '01',
-    title: 'Material Authenticity',
-    subtitle: 'SUBSTANCE & TACTILITY',
+    title: 'Transparent Budgeting & Cost Control',
+    subtitle: 'IN-HOUSE CRAFT & QUANTITY SURVEYING',
     description:
-      'Unvarnished natural stone, solid European smoked oak, and hand-finished architectural bronze that develop genuine character and age with dignified beauty over decades.',
-    highlight: 'Zero synthetic veneers or transient composites.',
+      'From initial feasibility through final sign-off, we control costs from all edges and corners through our dedicated in-house manufacturing facility. Complete cost transparency with zero hidden middleman markups.',
+    highlight: 'Direct in-house furniture manufacturing & quantity surveying.',
   },
   {
     number: '02',
-    title: 'Light & Solar Proportion',
-    subtitle: 'SPATIAL COMPOSITION',
+    title: 'Bespoke Architectural Designing',
+    subtitle: 'TRANSLATING YOUR HEART\'S VISION',
     description:
-      'Volumetric spaces organized deliberately around natural solar daylight cycles, cross-ventilation breezes, acoustic stillness, and intuitive human circulation paths.',
-    highlight: 'Circadian daylight harvesting without thermal gain.',
+      'Our interior designers and architects understand your unique requirements to "draw the picture in your heart." From door-to-door property consultations to photorealistic 3D visualizations, every detail is tailored to your lifestyle.',
+    highlight: 'One-on-one consultation, space planning & 3D visualization.',
   },
   {
     number: '03',
-    title: 'Enduring Restraint',
-    subtitle: 'LONGEVITY OVER TREND',
+    title: 'Total Turnkey Implementation',
+    subtitle: 'FROM REQUIREMENT TO HANDING OVER KEYS',
     description:
-      'Structural clarity, honest architectural detailing, and spatial serenity that transcend seasonal fashion to form timeless architectural landmarks.',
-    highlight: 'Designed to outlive transient design trends.',
+      'Handling the total project for you up to handing over the keys. We take complete care of Civil Construction, Electrical (MEP), Air Conditioning (HVAC), Finishes, Furniture Manufacturing, and Lighting as your primary consultant.',
+    highlight: 'Total project consultancy, structural support & trade coordination.',
   },
 ];
 
@@ -36,11 +36,11 @@ const LEADERSHIP = [
   {
     name: 'Mr. Kevin',
     role: 'Managing Director & Principal Designer',
-    credentials: 'Founder & Principal Implementation Lead',
+    credentials: 'Lead Designer & Turnkey Director',
     location: 'Colombo Headquarters, Sri Lanka',
-    bio: 'With nearly a decade of experience in interior design and turnkey implementation, Kevin has successfully managed hundreds of projects across both commercial and residential sectors, transforming thousands of square feet into functional, aesthetically refined environments.',
+    bio: 'With nearly a decade of specialized experience in commercial and residential interior design and turnkey implementation, Mr. Kevin has converted thousands of square feet into distinguished destinations. Leading a dedicated team of professionals with a vision to create the best space on earth, Kevin oversees full space transformations, in-house custom furniture manufacturing, quantity surveying, and specialized structural support.',
     image: images.directorKevin,
-    focus: 'Interior Architecture, Commercial Fit-Out & Turnkey Realisation',
+    focus: 'Commercial & Residential Architecture, In-House Furniture Manufacturing & Turnkey Handover',
   },
   {
     name: 'Elena Roth, M.Arch',
@@ -145,18 +145,21 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-6 space-y-6">
             <span className="font-technical-label text-xs tracking-widest uppercase text-[#A48A7A]">
-              OUR DUAL-HUB PEDIGREE
+              END-TO-END ARCHITECTURAL PRACTICE
             </span>
             <h2 className="heading-2--serif text-3xl sm:text-5xl text-[#181614] leading-tight font-normal">
-              Where Swiss Precision <br />
-              <span className="font-serif italic text-[#A48A7A]">Meets Tropical Modernism.</span>
+              Handling the Total Project <br />
+              <span className="font-serif italic text-[#A48A7A]">From Requirement to Keys Handover.</span>
             </h2>
             <div className="space-y-4 text-sm sm:text-base text-[#181614]/75 font-light leading-relaxed">
               <p className="text-lg sm:text-xl font-serif text-[#181614] leading-snug">
-                We reject standard architectural fashion. Every commission begins with radical material authenticity and absolute spatial discipline.
+                Design Ark takes total responsibility for your project in three seamless steps: Budgeting, Designing, and Implementing.
               </p>
               <p>
-                From our flagship Colombo atelier at 33, 1 Narahenpita - Nawala Road, we engineer structural frameworks, environmental responsiveness, physical material archives, master joinery craftsmanship, and on-site construction supervision across Sri Lanka.
+                From our flagship Colombo atelier at 33, 1 Narahenpita - Nawala Road, we manage civil construction, electrical &amp; MEP, air conditioning (HVAC), architectural finishes, bespoke lighting, and in-house furniture manufacturing. We act as your single-point consultant, coordinating all specialized trades with 100% transparency.
+              </p>
+              <p>
+                Whether crafting a warm, loving home or a high-performance corporate office that engages with company culture, our capabilities add enduring value to every square foot of your space.
               </p>
             </div>
 

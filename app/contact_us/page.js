@@ -170,7 +170,7 @@ export default function ContactPage() {
                   </a>
                   <button
                     type="button"
-                    onClick={() => handleCopy('inquiry@designark.com', 'email')}
+                    onClick={() => handleCopy('kevin.designark@gmail.com', 'email')}
                     className="font-technical-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-[#E5DFD7] hover:border-[#181614] hover:bg-[#181614] hover:text-white transition-all cursor-pointer"
                   >
                     {copiedEmail ? '✓ Copied' : 'Copy'}

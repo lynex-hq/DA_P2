@@ -381,7 +381,7 @@ export default function SiteHeader() {
 
               {/* WhatsApp Icon Mark */}
               <a
-                href="https://wa.me/94112345678"
+                href="https://wa.me/94770288327"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full border border-white/20 hover:border-[#DFC294] text-white/70 hover:text-[#DFC294] hover:bg-white/5 flex items-center justify-center transition-all duration-300 group cursor-pointer"
@@ -395,16 +395,16 @@ export default function SiteHeader() {
 
               {/* Email Icon Pill with text */}
               <a
-                href="mailto:inquiry@designark.com"
+                href="mailto:kevin.designark@gmail.com"
                 className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/20 hover:border-[#DFC294] text-white/70 hover:text-[#DFC294] hover:bg-white/5 transition-all duration-300 group cursor-pointer"
-                title="inquiry@designark.com"
+                title="kevin.designark@gmail.com"
               >
                 <svg className="w-3.5 h-3.5 fill-none stroke-current transition-transform duration-300 group-hover:scale-110" strokeWidth="1.75" viewBox="0 0 24 24">
                   <rect x="3" y="5" width="18" height="14" rx="2"/>
                   <polyline points="3 7 12 13 21 7"/>
                 </svg>
                 <span className="font-technical-label text-[9px] sm:text-[10px] tracking-widest uppercase">
-                  inquiry@designark.com
+                  kevin.designark@gmail.com
                 </span>
               </a>
             </div>

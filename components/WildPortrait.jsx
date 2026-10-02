@@ -45,13 +45,13 @@ export default function WildPortrait() {
 
           <div className="lg:col-span-7 space-y-6 text-sm sm:text-base md:text-lg text-[#181614]/80 font-light leading-relaxed">
             <p>
-              Our focus lies on properties and estates with unrealized architectural potential — particularly where intrinsic value is not visible at first glance. We analyze, appraise, and optimize spaces to systematically elevate both their lived experience and enduring value.
+              Design Ark is capable of handling the total project for you, from the initial point of requirement up to handing over the keys. In three simple steps: <strong>Budgeting, Designing, and Implementing</strong>.
             </p>
             <p>
-              Many owners possess prime land or existing residences with untapped possibilities. That is precisely where our atelier steps in: with comprehensive feasibility studies, architectural foresight, and strategic advisory, we chart clear avenues from concept to turnkey execution.
+              We provide door-to-door consultations, visiting your property to advise on uplifting appearance, space planning, and color palettes. We take complete care of Civil Construction, Electrical &amp; MEP, Air Conditioning, Architectural Finishes, Furniture Manufacturing, and Lighting with 100% transparency.
             </p>
             <p className="text-[#A48A7A] font-normal">
-              Our initial potential studies, feasibility analyses, and advisory consultations are complimentary and without obligation.
+              Backed by our in-house manufacturing facility and specialized quantity surveying, we control costs from all edges and corners while drawing the picture in your heart.
             </p>
 
             <div className="pt-2">

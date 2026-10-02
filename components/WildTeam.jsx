@@ -69,12 +69,20 @@ export default function WildTeam() {
       <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-16 space-y-12">
         
         {/* Section Header with Left/Right Arrows */}
-        <div className="flex items-center justify-between">
-          <h2 className="heading-2--serif text-4xl sm:text-6xl md:text-7xl font-normal gradient-color">
-            Team.
-          </h2>
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+          <div className="space-y-2">
+            <span className="font-technical-label text-xs tracking-[0.25em] text-[#A48A7A] uppercase block">
+              Leadership &amp; Architectural Guild
+            </span>
+            <h2 className="heading-2--serif text-4xl sm:text-6xl md:text-7xl font-normal gradient-color">
+              Team.
+            </h2>
+            <p className="text-xs sm:text-sm text-[#181614]/75 font-light max-w-xl pt-1">
+              Led by Managing Director Mr. Kevin with nearly a decade of experience converting thousands of square feet into distinguished destinations &mdash; dedicated to drawing the picture in your heart.
+            </p>
+          </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 shrink-0 self-end sm:self-auto">
             <button
               type="button"
               onClick={() => scroll('left')}
