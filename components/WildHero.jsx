@@ -152,20 +152,6 @@ export default function WildHero() {
       </div>
 
       <style jsx>{`
-        .hero-headline-title {
-          text-shadow:
-            0 1px 2px rgba(0, 0, 0, 0.95),
-            0 3px 12px rgba(0, 0, 0, 0.85),
-            0 8px 30px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero-headline-italic {
-          text-shadow:
-            0 1px 2px rgba(0, 0, 0, 0.95),
-            0 3px 12px rgba(0, 0, 0, 0.85),
-            0 8px 30px rgba(0, 0, 0, 0.7);
-        }
-
         @keyframes heroTitleBloom {
           0% {
             opacity: 0;
@@ -306,12 +292,12 @@ export default function WildHero() {
           className="space-y-0.5 sm:space-y-1"
         >
           <div>
-            <h1 className="anim-hero-line-1 hero-headline-title heading-2--serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#FAF9F4] font-normal leading-[1.02] tracking-tight max-w-5xl drop-shadow-[0_4px_35px_rgba(0,0,0,0.95)]">
+            <h1 className="anim-hero-line-1 hero-headline-title heading-2--serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#FAF9F4] font-normal leading-[1.02] tracking-tight max-w-5xl">
               {activeSlide.titleLine1}
             </h1>
           </div>
           <div>
-            <span className="anim-hero-line-2 hero-headline-italic block font-serif italic font-normal text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#DFC294] leading-[1.02] tracking-tight drop-shadow-[0_4px_35px_rgba(0,0,0,0.95)]">
+            <span className="anim-hero-line-2 hero-headline-italic block font-serif italic font-normal text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#DFC294] leading-[1.02] tracking-tight">
               {activeSlide.titleLine2}
             </span>
           </div>
@@ -321,7 +307,7 @@ export default function WildHero() {
         {activeSlide.tagline && (
           <p
             key={`tagline-${currentSlide}`}
-            className="anim-hero-narrative font-light text-xs sm:text-sm md:text-[15px] text-[#FAF9F4]/85 max-w-xl mx-auto leading-relaxed drop-shadow-[0_2px_18px_rgba(0,0,0,0.95)] mt-3 sm:mt-4 px-4"
+            className="anim-hero-narrative font-light text-xs sm:text-sm md:text-[15px] text-[#FAF9F4]/85 max-w-xl mx-auto leading-relaxed mt-3 sm:mt-4 px-4"
           >
             {activeSlide.tagline}
           </p>

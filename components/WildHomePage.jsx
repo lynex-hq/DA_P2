@@ -4,7 +4,6 @@ import { useState } from 'react';
 import WildHero from '@/components/WildHero';
 import WildPortrait from '@/components/WildPortrait';
 import WildTeam from '@/components/WildTeam';
-import WildSloganTicker from '@/components/WildSloganTicker';
 import WildServices from '@/components/WildServices';
 import WildProjects from '@/components/WildProjects';
 import WildPartners from '@/components/WildPartners';
@@ -28,10 +27,7 @@ export default function WildHomePage() {
       {/* 3. Team Draggable Carousel */}
       <WildTeam />
 
-      {/* 4. Slogan Parallax Banner & Infinite Ticker */}
-      <WildSloganTicker />
-
-      {/* 5. Kompetenzen / Disciplines with 5 Interactive Numbered Pills */}
+      {/* 4. Kompetenzen / Disciplines with 5 Interactive Numbered Pills */}
       <WildServices onOpenPopup={(id) => setActivePopup(id)} />
 
       {/* 6. Selected Projects Horizontal Carousel */}
